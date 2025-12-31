@@ -1,7 +1,6 @@
 
 
-tmp1 = [1,2,3]
-tmp2 = []
+tmp = [(1,2), (3,4)]
 
-if not tmp2:
-    print(tmp1)
+for i, (j, k) in enumerate(tmp):
+    print(i, j)
