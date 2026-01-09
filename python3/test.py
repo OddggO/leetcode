@@ -1,6 +1,6 @@
+from typing import List
 
-
-tmp = [(1,2), (3,4)]
-
-for i, (j, k) in enumerate(tmp):
-    print(i, j)
+arr = list([5, 2, 10, 1, 4])
+print(arr)
+arr_sorted = sorted(enumerate(arr), key=lambda x: x[0])
+print(arr_sorted)
