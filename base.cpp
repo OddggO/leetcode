@@ -5,11 +5,11 @@ using namespace std;
 
 int main()
 {
-    string s = "010101";
-    for (int i = 0; i < s.size(); ++i)
+    vector<int> a = {1, 2, 3};
+    vector<int> b = a;
+    b[0] = 10;
+    for (int i = 0; i < a.size(); ++i)
     {
-        // printf("%c %c %d\n", s[i], *(s.data() + i), atoi(s.data() + i));
-        printf("%c %c %d\n", s[i], *(s.data() + i), s[i] - '0');
+        cout << a[i] << " " << b[i] << endl;
     }
-    return 0;
 }
